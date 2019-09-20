@@ -1,0 +1,78 @@
+what is twitter?
+basically a //user// can //post// //tweets//
+- Minimum Viable Product - 
+instagram: people can post pictures
+snapchat: people can send stories
+facebook: people can add friends
+if you can't communicate a MVP in one sentence, the app idea is too broad or too complex
+
+
+REMEMBER: most learning apps will be boring. it's a project, not a product, you're not pitching it to shark tank. it doesn't have to be exciting.
+DOMAIN: TWITTER
+MODEL: USER
+  - username
+  - bio
+MODEL: TWEET
+  - content
+  - time stamp
+  - author
+
+  the above is //DOMAIN MODELING //
+
+  the above headers (user, tweet) are MODELS of a DOMAIN
+  DOMAIN MODELING IS A CRITICAL SKILL
+  make explicit what models are && make explicit what the relationships are between the models
+ 
+ HAS-MANY / BELONGS TO RELATIONSHIP
+ aka a ONE-TO-MANY relationship
+ there are many ways to look at a relationship
+ one USER has many TWEETS
+ TWEETS belong to USER
+one user can have many instances of tweet
+a tweet belongs to one user
+
+(user)---<(tweet)
+"chicken feet" mapping model
+(continent)--<(countries)
+(windows)>--(buildings)
+
+DELIVERABLES
+- create a User class. the class should have these methods:
+#initialize which takes a username, bio, and have a reader method for the username, bio
+# tweets that returns an array of Tweet instances
+# post_tweet that takes a message, creates a new tweet and adds it to the user's tweet collection
+
+- create a Tweet class. the class should have these methods:
+Tweet#message that returns a string
+Tweet#user that returns an instnace of the user class
+tweet.all returns all the tweets created
+tweet#username returns the username of the tweet's user
+- instances of dependent classes are responsible for tracking the class they belong to.
+BELONGS-TO CLASS INSTANCES MUST TRACK WHAT MODEL THEY BELONG TO
+
+DO NOT BUILD DELIVERABLES LINEARLY
+BUILD OUT INDEPENDENT (HAS-MANY) CLASS FIRST
+just to the point that you can instantiate a user
+then build the dependency
+bounce back and forth between classes
+
+ALWAYS READ THE README. DO NOT SKIM IT. READ IT.
+understand the deliverables
+understand the relationships
+domain model
+figure out independent & dependent classes
+build independent class to the instantiation point
+then build out some of the dependent classes
+having something written down is critical for success
+
+CRUCIAL
+chicken foot MUST include awareness of / reference to  the chicken 
+
+
+
+
+
+
+
+
+
